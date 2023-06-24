@@ -6,12 +6,9 @@ slug: /
 
 # Hello!
 
-I am SUD.
-I made this site with ☕ and `docusaurus`.
+I hope you find something interesting or worth your time.
 
-Hope you find something interesting or worth your time.
-
-Find more about me on [this page!](/about-me)
+Find about me on [this page!](/about-me)
 
 ## Do check out
 
