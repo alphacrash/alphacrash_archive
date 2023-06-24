@@ -91,8 +91,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "System Design",
-                to: "/docs/intro",
+                label: "Docs",
+                to: "/",
               },
             ],
           },
