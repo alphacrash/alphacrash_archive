@@ -4,7 +4,7 @@ I am full stack developer mostly spending my time on React, Spring Boot and Post
 
 If I'm not coding on weekdays, then probably I will be playing Valorant and FIFA. On weekend, you can't catch me! (likely trekking on some hill with no network 👻)
 
-## Technology I work on
+### Tech I work on
 
 - Language - JavaScript, Java, SQL
 - Framework - React, Spring Boot
