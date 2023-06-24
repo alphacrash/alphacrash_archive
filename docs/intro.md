@@ -13,7 +13,7 @@ Hope you find something interesting or worth your time.
 
 Find more about me on [this page!](/about-me)
 
-## Sections:
+## Sections
 
 - [Data Structures & Algorithms](/category/data-structures--algorithms)
 - [System Design](/category/system-design)

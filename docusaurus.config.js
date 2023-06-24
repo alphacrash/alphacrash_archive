@@ -72,6 +72,7 @@ const config = {
             position: "left",
             label: "Docs",
           },
+          { to: "/sql", label: "Practice SQL", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/about-me", label: "About", position: "right" },
           {
@@ -86,6 +87,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [require.resolve("./sitePlugin")],
 };
 
 module.exports = config;
