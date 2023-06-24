@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import {
+  Container,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 import Layout from "@theme/Layout";
-import { Container, Grid, Typography } from "@mui/material";
-import data from "../container/data/questions.json";
-import Link from "@docusaurus/Link";
+import React, { useState } from "react";
 import QuestionItem from "../container/components/QuestionItem";
+import data from "../container/data/questions.json";
+import { filterQuestions } from "../container/utils/utils";
 
 const QuestionList = ({ questions = data }) => {
   const [key, setKey] = useState(Date.now());
@@ -142,11 +150,23 @@ const QuestionList = ({ questions = data }) => {
         {filteredQuestions.length === 0 ? (
           <p>No questions found matching the selected filters.</p>
         ) : (
-          <ul>
-            {filteredQuestions.map((question) => (
-              <QuestionItem key={question.id} question={question} />
-            ))}
-          </ul>
+          <TableContainer>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Done</TableCell>
+                  <TableCell>Question</TableCell>
+                  <TableCell>Pattern</TableCell>
+                  <TableCell>Difficulty</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {filteredQuestions.map((question) => (
+                  <QuestionItem key={question.id} question={question} />
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
         )}
       </Container>
     </Layout>

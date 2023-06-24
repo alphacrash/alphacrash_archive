@@ -1,4 +1,4 @@
-const filterQuestions = (questions, filters) => {
+export const filterQuestions = (questions, filters) => {
   return questions.filter((question) => {
     const { checked, patterns, difficulty, companies, premium } = filters;
 

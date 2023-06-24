@@ -1,24 +1,23 @@
+import { Checkbox, TableCell, TableRow, Typography } from "@mui/material";
 import React from "react";
 
 const QuestionItem = ({ question }) => {
   return (
-    <div key={question.id}>
-      <input
-        type="checkbox"
-        checked={localStorage.getItem(question.slug) === "true"}
-        onChange={(e) => {
-          const isChecked = e.target.checked;
-          localStorage.setItem(question.slug, isChecked);
-        }}
-      />
-      <span>{question.title}</span>
-      <span>Pattern: {question.pattern.join(", ")}</span>
-      <span>Difficulty: {question.difficulty}</span>
-      <span>
-        Companies:{" "}
-        {question.companies.map((company) => company.name).join(", ")}
-      </span>
-    </div>
+    <TableRow key={question.id}>
+      <TableCell padding="checkbox">
+        <Checkbox
+          checked={localStorage.getItem(question.slug) === "true"}
+          onChange={(e) => {
+            const isChecked = e.target.checked;
+            localStorage.setItem(question.slug, isChecked);
+          }}
+        />
+      </TableCell>
+
+      <TableCell>{question.title}</TableCell>
+      <TableCell>{question.pattern.join(", ")}</TableCell>
+      <TableCell>{question.difficulty}</TableCell>
+    </TableRow>
   );
 };
 
