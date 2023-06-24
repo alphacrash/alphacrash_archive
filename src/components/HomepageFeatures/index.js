@@ -6,37 +6,22 @@ const FeatureList = [
   {
     title: "System Design",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        Learn how to design scalable systems by practicing on commonly asked
-        questions in system design interviews.
-      </>
-    ),
+    description: <>Popular system design questions</>,
   },
   {
     title: "Data Structures & Algorithms",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>
-        Structured problems to understand the key patterns necessary to solve
-        almost any coding interview question.
-      </>
-    ),
+    description: <>Common problems required for interviews</>,
   },
   {
     title: "SQL",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        SQL is a standard language for storing, manipulating and retrieving data
-        in databases.
-      </>
-    ),
+    description: <>Platform to learn and practice SQL</>,
   },
   {
     title: "AI / ML",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>Just some things I've learned about AI / ML.</>,
+    description: <>Just some things I've learned about AI / ML</>,
   },
 ];
 
