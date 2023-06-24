@@ -12,7 +12,7 @@ Find about me on [this page!](/about-me)
 
 ## Do check out
 
-[Practice SQL section](http://localhost:3000/sql) - It contains SQL questions that you can practice concepts on.
+[Practice SQL section](http://localhost:3000/sql) - It contains SQL questions that you can practice on.
 
 ## Reading Sections
 

@@ -73,13 +73,8 @@ const config = {
             label: "Docs",
           },
           { to: "/sql", label: "Practice SQL", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/about-me", label: "About", position: "right" },
-          {
-            href: "https://github.com/alphacrash",
-            label: "GitHub",
-            position: "right",
-          },
+          { to: "/blog", label: "Blog", position: "right" },
+          { to: "/about-me", label: "About Me", position: "right" },
         ],
       },
       prism: {
