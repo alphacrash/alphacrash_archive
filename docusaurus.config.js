@@ -73,7 +73,7 @@ const config = {
             label: "Learn",
           },
           { to: "/sql", label: "SQL", position: "left" },
-          { to: "/dsa99", label: "DSA 99", position: "left" },
+          { to: "/dsa", label: "DSA Patterns", position: "left" },
           { to: "/blog", label: "Blog", position: "right" },
           { to: "/about-me", label: "About Me", position: "right" },
         ],
