@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import exercises from "../../data";
+import exercises from "../data";
 import _ from "lodash";
 
 const initialState = {

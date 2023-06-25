@@ -1,18 +1,14 @@
 import { Container, Grid, Typography } from "@mui/material";
 import Layout from "@theme/Layout";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import data from "../data/questions.json";
 import QuestionTable from "./QuestionTable";
-import { filterQuestions } from "./utils/utils";
-import Filters from "./components/Filters";
+import { filterQuestions } from "../utils/utils";
+import Filters from "./Filters";
 
 const QuestionList = ({ questions = data }) => {
-  const [filters, setFilters] = useState({
-    checked: false,
-    patterns: [],
-    difficulty: "",
-    companies: [],
-  });
+  const filters = useSelector((state) => state.dsa.filters);
 
   return (
     <Layout>
@@ -22,11 +18,7 @@ const QuestionList = ({ questions = data }) => {
             <Typography variant="h4">Key Patterns: DSA</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Filters
-              filters={filters}
-              questions={questions}
-              setFilters={setFilters}
-            />
+            <Filters filters={filters} questions={questions} />
           </Grid>
         </Grid>
 

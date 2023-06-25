@@ -1,8 +1,8 @@
 import React from "react";
-import QuestionList from "../container/dsa/QuestionList";
+import DSARunner from "../container/dsa";
 
 const DSA = () => {
-  return <QuestionList />;
+  return <DSARunner />;
 };
 
 export default DSA;

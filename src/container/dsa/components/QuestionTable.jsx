@@ -1,20 +1,23 @@
 import {
+  Grid,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
+  Typography,
 } from "@mui/material";
 import React from "react";
 import QuestionItem from "./QuestionItem";
 
 const QuestionTable = ({ questions = [] }) => {
   return (
-    <>
-      <h2>Question List</h2>
+    <Grid>
       {questions.length === 0 ? (
-        <p>No questions found matching the selected filters.</p>
+        <Typography>
+          No questions found matching the selected filters.
+        </Typography>
       ) : (
         <TableContainer>
           <Table>
@@ -34,7 +37,7 @@ const QuestionTable = ({ questions = [] }) => {
           </Table>
         </TableContainer>
       )}
-    </>
+    </Grid>
   );
 };
 

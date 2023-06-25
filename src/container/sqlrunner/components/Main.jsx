@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import seed from "../../data/seed";
+import seed from "../data/seed";
 import { updateCurrentSet } from "../features/exerciseSlice";
 import Runner from "./Runner";
 import Tasks from "./Tasks";

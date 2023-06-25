@@ -1,36 +1,25 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { resetFilters, updateFilters } from "../../features/dsaSlice";
 
-const Filters = ({ filters, questions = [], setFilters }) => {
+const Filters = ({ filters, questions = [] }) => {
+  const dispatch = useDispatch();
   const handleFilterChange = (filterName, value) => {
-    setFilters((prevFilters) => ({
-      ...prevFilters,
-      [filterName]: value,
-    }));
+    dispatch(updateFilters(filterName, value));
   };
 
   const handleResetFilters = () => {
-    setFilters({
-      checked: false,
-      patterns: [],
-      difficulty: "",
-      companies: [],
-    });
+    dispatch(resetFilters());
   };
 
   const handleResetProgress = () => {
-    handleResetFilters();
-    questions.forEach((question) => {
-      localStorage.removeItem(question.slug);
-    });
+    dispatch(resetProgress());
   };
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12} md={6}>
-        <h2>Filters</h2>
-        <button onClick={handleResetFilters}>Reset Filters</button>
-        <button onClick={handleResetProgress}>Reset Progress</button>
+      <Grid item xs={12}>
         <label>
           <input
             type="checkbox"
@@ -117,8 +106,35 @@ const Filters = ({ filters, questions = [], setFilters }) => {
           </select>
         </div>
       </Grid>
+      {newFunction(handleResetFilters, handleResetProgress)}
     </Grid>
   );
 };
 
 export default Filters;
+function newFunction(handleResetFilters, handleResetProgress) {
+  return (
+    <Grid container spacing={2} justifyContent="space-between">
+      <Grid item>
+        <Button
+          variant="outlined"
+          size="small"
+          color="primary"
+          onClick={handleResetFilters}
+        >
+          Reset Filters
+        </Button>
+      </Grid>
+      <Grid item>
+        <Button
+          variant="outlined"
+          size="small"
+          color="warning"
+          onClick={handleResetProgress}
+        >
+          Reset Progress
+        </Button>
+      </Grid>
+    </Grid>
+  );
+}
