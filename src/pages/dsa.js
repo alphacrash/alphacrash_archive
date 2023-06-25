@@ -3,11 +3,7 @@ import React from "react";
 import QuestionList from "../container/components/QuestionList";
 
 const DSA = () => {
-  return (
-    <BrowserOnly>
-      <QuestionList />
-    </BrowserOnly>
-  );
+  return <QuestionList />;
 };
 
 export default DSA;
