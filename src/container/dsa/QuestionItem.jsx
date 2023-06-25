@@ -17,6 +17,7 @@ const QuestionItem = ({ question }) => {
           onChange={(e) => {
             const isChecked = e.target.checked;
             localStorage.setItem(question.slug, isChecked);
+            setChecked(isChecked);
           }}
         />
       </TableCell>

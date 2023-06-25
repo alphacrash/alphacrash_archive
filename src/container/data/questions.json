@@ -5,7 +5,6 @@
     "slug": "contains-duplicate",
     "pattern": ["Arrays"],
     "difficulty": "Easy",
-    "premium": false,
     "companies": [
       {
         "name": "Adobe",
@@ -1273,15 +1272,6 @@
         "frequency": 2
       }
     ]
-  },
-  {
-    "id": 26,
-    "title": "Generalized Abbreviation",
-    "slug": "generalized-abbreviation",
-    "pattern": ["Backtracking"],
-    "difficulty": "Medium",
-    "premium": true,
-    "companies": []
   },
   {
     "id": 27,
@@ -3238,61 +3228,6 @@
     ]
   },
   {
-    "id": 63,
-    "title": "Graph Valid Tree",
-    "slug": "graph-valid-tree",
-    "pattern": ["BFS", "DFS", "Graph", "Union Find"],
-    "difficulty": "Medium",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 3
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 2
-      },
-      {
-        "name": "Bloomberg",
-        "slug": "bloomberg",
-        "frequency": 2
-      },
-      {
-        "name": "TikTok",
-        "slug": "tiktok",
-        "frequency": 2
-      }
-    ]
-  },
-  {
-    "id": 64,
-    "title": "Number of Connected Components in an Undirected Graph",
-    "slug": "number-of-connected-components-in-an-undirected-graph",
-    "pattern": ["BFS", "DFS", "Graph", "Union Find"],
-    "difficulty": "Medium",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 3
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 3
-      },
-      {
-        "name": "TikTok",
-        "slug": "tiktok",
-        "frequency": 3
-      }
-    ]
-  },
-  {
     "id": 66,
     "title": "Reverse Linked List II",
     "slug": "reverse-linked-list-ii",
@@ -3733,31 +3668,6 @@
     ]
   },
   {
-    "id": 76,
-    "title": "Meeting Rooms",
-    "slug": "meeting-rooms",
-    "pattern": ["Intervals"],
-    "difficulty": "Easy",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 8
-      },
-      {
-        "name": "Bloomberg",
-        "slug": "bloomberg",
-        "frequency": 2
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 2
-      }
-    ]
-  },
-  {
     "id": 77,
     "title": "Merge Intervals",
     "slug": "merge-intervals",
@@ -3958,86 +3868,6 @@
     ]
   },
   {
-    "id": 80,
-    "title": "Meeting Rooms II",
-    "slug": "meeting-rooms-ii",
-    "pattern": ["Heap", "Intervals"],
-    "difficulty": "Medium",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Facebook",
-        "slug": "facebook",
-        "frequency": 6
-      },
-      {
-        "name": "Walmart Labs",
-        "slug": "walmart-labs",
-        "frequency": 4
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 3
-      },
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 3
-      },
-      {
-        "name": "TikTok",
-        "slug": "tiktok",
-        "frequency": 3
-      },
-      {
-        "name": "Uber",
-        "slug": "uber",
-        "frequency": 3
-      },
-      {
-        "name": "Bloomberg",
-        "slug": "bloomberg",
-        "frequency": 2
-      },
-      {
-        "name": "Apple",
-        "slug": "apple",
-        "frequency": 2
-      },
-      {
-        "name": "Goldman Sachs",
-        "slug": "goldman-sachs",
-        "frequency": 2
-      },
-      {
-        "name": "Microsoft",
-        "slug": "microsoft",
-        "frequency": 2
-      },
-      {
-        "name": "Oracle",
-        "slug": "oracle",
-        "frequency": 2
-      },
-      {
-        "name": "Visa",
-        "slug": "visa",
-        "frequency": 2
-      },
-      {
-        "name": "eBay",
-        "slug": "ebay",
-        "frequency": 2
-      },
-      {
-        "name": "Cruise Automation",
-        "slug": "cruise-automation",
-        "frequency": 2
-      }
-    ]
-  },
-  {
     "id": 81,
     "title": "Task Scheduler",
     "slug": "task-scheduler",
@@ -4128,31 +3958,6 @@
       {
         "name": "TikTok",
         "slug": "tiktok",
-        "frequency": 2
-      }
-    ]
-  },
-  {
-    "id": 84,
-    "title": "Employee Free Time",
-    "slug": "employee-free-time",
-    "pattern": ["Heap", "Greedy"],
-    "difficulty": "Hard",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 7
-      },
-      {
-        "name": "Pinterest",
-        "slug": "pinterest",
-        "frequency": 3
-      },
-      {
-        "name": "Uber",
-        "slug": "uber",
         "frequency": 2
       }
     ]
@@ -5401,15 +5206,6 @@
     ]
   },
   {
-    "id": 112,
-    "title": "Rearrange String k Distance Apart",
-    "slug": "rearrange-string-k-distance-apart",
-    "pattern": ["Greedy", "Heap"],
-    "difficulty": "Hard",
-    "premium": true,
-    "companies": []
-  },
-  {
     "id": 113,
     "title": "Course Schedule III",
     "slug": "course-schedule-iii",
@@ -5601,50 +5397,6 @@
     "pattern": ["BFS", "Graph", "Topological Sort"],
     "difficulty": "Medium",
     "premium": false,
-    "companies": []
-  },
-  {
-    "id": 118,
-    "title": "Alien Dictionary",
-    "slug": "alien-dictionary",
-    "pattern": ["Graph", "Topological Sort"],
-    "difficulty": "Hard",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Airbnb",
-        "slug": "airbnb",
-        "frequency": 16
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 3
-      },
-      {
-        "name": "TikTok",
-        "slug": "tiktok",
-        "frequency": 2
-      },
-      {
-        "name": "Facebook",
-        "slug": "facebook",
-        "frequency": 2
-      },
-      {
-        "name": "Bloomberg",
-        "slug": "bloomberg",
-        "frequency": 2
-      }
-    ]
-  },
-  {
-    "id": 119,
-    "title": "Sequence Reconstruction",
-    "slug": "sequence-reconstruction",
-    "pattern": ["Graph", "Topological Sort"],
-    "difficulty": "Medium",
-    "premium": true,
     "companies": []
   },
   {
@@ -7379,15 +7131,6 @@
     "companies": []
   },
   {
-    "id": 160,
-    "title": "Index Pairs of a String",
-    "slug": "index-pairs-of-a-string",
-    "pattern": ["Trie"],
-    "difficulty": "Easy",
-    "premium": true,
-    "companies": []
-  },
-  {
     "id": 161,
     "title": "Maximum XOR of Two Numbers in an Array",
     "slug": "maximum-xor-of-two-numbers-in-an-array",
@@ -7456,55 +7199,6 @@
         "frequency": 2
       }
     ]
-  },
-  {
-    "id": 165,
-    "title": "Design Search Autocomplete System",
-    "slug": "design-search-autocomplete-system",
-    "pattern": ["Trie"],
-    "difficulty": "Hard",
-    "premium": true,
-    "companies": [
-      {
-        "name": "Lyft",
-        "slug": "lyft",
-        "frequency": 3
-      },
-      {
-        "name": "Google",
-        "slug": "google",
-        "frequency": 2
-      },
-      {
-        "name": "Microsoft",
-        "slug": "microsoft",
-        "frequency": 2
-      },
-      {
-        "name": "Amazon",
-        "slug": "amazon",
-        "frequency": 2
-      },
-      {
-        "name": "Bloomberg",
-        "slug": "bloomberg",
-        "frequency": 2
-      },
-      {
-        "name": "Apple",
-        "slug": "apple",
-        "frequency": 2
-      }
-    ]
-  },
-  {
-    "id": 166,
-    "title": "Word Squares",
-    "slug": "word-squares",
-    "pattern": ["Trie"],
-    "difficulty": "Hard",
-    "premium": true,
-    "companies": []
   },
   {
     "id": 167,
@@ -7786,26 +7480,6 @@
       {
         "name": "Capital One",
         "slug": "capital-one",
-        "frequency": 2
-      }
-    ]
-  },
-  {
-    "id": 174,
-    "title": "Factor Combinations",
-    "slug": "factor-combinations",
-    "pattern": ["Arrays", "Backtracking"],
-    "difficulty": "Medium",
-    "premium": true,
-    "companies": [
-      {
-        "name": "LinkedIn",
-        "slug": "linkedin",
-        "frequency": 5
-      },
-      {
-        "name": "TikTok",
-        "slug": "tiktok",
         "frequency": 2
       }
     ]

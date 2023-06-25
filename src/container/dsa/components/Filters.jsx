@@ -1,28 +1,7 @@
-import {
-  Container,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material";
-import Layout from "@theme/Layout";
-import React, { useState } from "react";
-import QuestionItem from "./QuestionItem";
-import data from "../data/questions.json";
-import { filterQuestions } from "./utils/utils";
+import { Container, Grid, Typography } from "@mui/material";
+import React from "react";
 
-const QuestionList = ({ questions = data }) => {
-  const [key, setKey] = useState(Date.now());
-  const [filters, setFilters] = useState({
-    checked: false,
-    patterns: [],
-    difficulty: "",
-    companies: [],
-    premium: false,
-  });
-
+const Filters = ({ filters, questions = [], setFilters }) => {
   const handleFilterChange = (filterName, value) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
@@ -36,7 +15,6 @@ const QuestionList = ({ questions = data }) => {
       patterns: [],
       difficulty: "",
       companies: [],
-      premium: false,
     });
   };
 
@@ -45,14 +23,11 @@ const QuestionList = ({ questions = data }) => {
     questions.forEach((question) => {
       localStorage.removeItem(question.slug);
     });
-    setKey(Date.now());
   };
 
-  const filteredQuestions = filterQuestions(questions, filters);
-
   return (
-    <Layout>
-      <Container>
+    <Grid container spacing={2}>
+      <Grid item xs={12} md={6}>
         <h2>Filters</h2>
         <button onClick={handleResetFilters}>Reset Filters</button>
         <button onClick={handleResetProgress}>Reset Progress</button>
@@ -64,11 +39,13 @@ const QuestionList = ({ questions = data }) => {
           />
           Checked
         </label>
-
+      </Grid>
+      <Grid item xs={12} md={6}>
         <div>
           <h3>Patterns</h3>
           <select
-            value={filters.patterns}
+            multiple
+            value={filters.patterns || []}
             onChange={(e) => handleFilterChange("patterns", e.target.value)}
           >
             <option value="">All</option>
@@ -87,11 +64,13 @@ const QuestionList = ({ questions = data }) => {
               ))}
           </select>
         </div>
-
+      </Grid>
+      <Grid item xs={12} md={6}>
         <div>
           <h3>Difficulty</h3>
           <select
-            value={filters.difficulty}
+            multiple
+            value={filters.difficulty || []}
             onChange={(e) => handleFilterChange("difficulty", e.target.value)}
           >
             <option value="">All</option>
@@ -105,12 +84,13 @@ const QuestionList = ({ questions = data }) => {
               ))}
           </select>
         </div>
-
+      </Grid>
+      <Grid>
         <div>
           <h3>Companies</h3>
           <select
             multiple
-            value={filters.companies}
+            value={filters.companies || []}
             onChange={(e) =>
               handleFilterChange(
                 "companies",
@@ -136,41 +116,9 @@ const QuestionList = ({ questions = data }) => {
               ))}
           </select>
         </div>
-
-        <label>
-          <input
-            type="checkbox"
-            checked={filters.premium}
-            onChange={(e) => handleFilterChange("premium", e.target.checked)}
-          />
-          Premium
-        </label>
-
-        <h2>Question List</h2>
-        {filteredQuestions.length === 0 ? (
-          <p>No questions found matching the selected filters.</p>
-        ) : (
-          <TableContainer>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell>Done</TableCell>
-                  <TableCell>Question</TableCell>
-                  <TableCell>Pattern</TableCell>
-                  <TableCell>Difficulty</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {filteredQuestions.map((question) => (
-                  <QuestionItem key={question.id} question={question} />
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        )}
-      </Container>
-    </Layout>
+      </Grid>
+    </Grid>
   );
 };
 
-export default QuestionList;
+export default Filters;

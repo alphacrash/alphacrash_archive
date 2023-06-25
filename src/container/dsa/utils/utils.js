@@ -32,3 +32,26 @@ export const filterQuestions = (questions, filters) => {
     return true;
   });
 };
+
+export const handleFilterChange = (filterName, value, setFilters) => {
+  setFilters((prevFilters) => ({
+    ...prevFilters,
+    [filterName]: value,
+  }));
+};
+
+export const handleResetFilters = (setFilters) => {
+  setFilters({
+    checked: false,
+    patterns: [],
+    difficulty: "",
+    companies: [],
+  });
+};
+
+export const handleResetProgress = (questions, setFilters) => {
+  handleResetFilters(setFilters);
+  questions.forEach((question) => {
+    localStorage.removeItem(question.slug);
+  });
+};

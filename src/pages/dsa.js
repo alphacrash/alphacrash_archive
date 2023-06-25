@@ -1,6 +1,5 @@
-import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from "react";
-import QuestionList from "../container/components/QuestionList";
+import QuestionList from "../container/dsa/QuestionList";
 
 const DSA = () => {
   return <QuestionList />;
